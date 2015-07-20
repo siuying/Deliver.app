@@ -10,6 +10,7 @@ import Cocoa
 
 class OpenViewController : NSViewController, NSOpenSavePanelDelegate {
     var metadata : Metadata?
+    var fileURL : NSURL?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +29,8 @@ class OpenViewController : NSViewController, NSOpenSavePanelDelegate {
             case NSFileHandlingPanelOKButton:
                 // open
                 if let URL = weakPanel?.URLs.first {
+                    self.fileURL = URL
+
                     do {
                         let data = try NSData(contentsOfURL: URL, options: NSDataReadingOptions(rawValue: 0))
                         let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0))
@@ -54,14 +57,14 @@ class OpenViewController : NSViewController, NSOpenSavePanelDelegate {
     
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
-            if self.metadata == nil {
-                print("missing metadata")
+            if self.metadata == nil || self.fileURL == nil {
                 return
             }
             
             if identifier == MetadataSegue.ShowMetadata.rawValue {
                 if let controller = segue.destinationController as? EditorViewController {
                     controller.metadata = self.metadata
+                    controller.fileURL = self.fileURL
                 }
             }
         }

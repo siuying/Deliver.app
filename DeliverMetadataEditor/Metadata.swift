@@ -24,6 +24,18 @@ struct MetadataItem {
     var supportURL : String
     var privacyURL : String
     var keywords : [String]
+    
+    func toDictionary() -> NSDictionary {
+        return [
+            "title": title,
+            "description": description,
+            "version_whats_new": versionWhatsNew,
+            "software_url": softwareURL,
+            "support_url": supportURL,
+            "privacy_url": privacyURL,
+            "keywords": keywords
+        ]
+    }
 }
 
 struct Metadata {
@@ -64,6 +76,14 @@ extension Metadata {
         }
         
         throw MetadataError.InvalidJSON
+    }
+    
+    func toDictionary() -> NSDictionary {
+        var result : [String:AnyObject] = [:]
+        for (language, item) in self.langauges {
+            result[language.rawValue] = item.toDictionary()
+        }
+        return result
     }
 }
 

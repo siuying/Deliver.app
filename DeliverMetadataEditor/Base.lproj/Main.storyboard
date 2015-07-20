@@ -654,6 +654,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="saveForm:" target="XfG-lQ-9wD" id="2Ah-E8-6oa"/>
+                                </connections>
                             </button>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sai-rh-h3t">
                                 <rect key="frame" x="593" y="716" width="240" height="26"/>

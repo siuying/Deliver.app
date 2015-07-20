@@ -10,7 +10,7 @@ import Cocoa
 
 class EditorViewController: NSViewController {
     
-    // views
+    // MARK: views
     
     @IBOutlet var popupButton: NSPopUpButton!
     @IBOutlet var titleTextField: NSTextField!
@@ -23,7 +23,10 @@ class EditorViewController: NSViewController {
     @IBOutlet var marketURLTextField: NSTextField!
     @IBOutlet var privacyPolicyURLTextField: NSTextField!
 
-    // data
+    // MARK: data
+    
+    var fileURL : NSURL?
+
     var metadata : Metadata? {
         didSet {
             // if metadata is set, set the languages
@@ -53,8 +56,10 @@ class EditorViewController: NSViewController {
             }
         }
     }
-
-    // when popup button selected item has changed, update the selectedLangauge field
+    
+    // MARK: Actions
+    
+    /// when popup button selected item has changed, update the selectedLangauge field
     @IBAction func languageDidChanged(sender: AnyObject) {
         if let selectedItem = self.popupButton.selectedItem {
             if let language = Language(rawValue: selectedItem.title) {
@@ -62,6 +67,23 @@ class EditorViewController: NSViewController {
             }
         }
     }
+
+    /// Save the form
+    @IBAction func saveForm(sender: AnyObject) {
+        if let metadata = self.metadata {
+            do {
+                let data = try NSJSONSerialization.dataWithJSONObject(metadata.toDictionary(), options: NSJSONWritingOptions.PrettyPrinted)
+                try data.writeToURL(self.fileURL!, options: NSDataWritingOptions(rawValue: 0))
+                print("save completed!")
+
+            } catch {
+                print("error saving form: \(error)")
+
+            }
+        }
+    }
+    
+    // MARK: View Controller
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +93,8 @@ class EditorViewController: NSViewController {
             self.loadForm(metadata, selectedLanguage: selectedLanguage)
         }
     }
+
+    // MARK: Private
 
     private func loadForm(metadata: Metadata, selectedLanguage: Language) {
         // if the popup button has not been loaded, do not load the form
