@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540A601C1B5CE561009FC10E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540A601B1B5CE561009FC10E /* InfoPlist.strings */; };
 		5462102A1B5CAFFF00043718 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546210291B5CAFFF00043718 /* Decodable.framework */; };
 		5462102C1B5CB00700043718 /* Decodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 546210291B5CAFFF00043718 /* Decodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5494F0981B5C9AFD00101BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		540A601B1B5CE561009FC10E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		546210291B5CAFFF00043718 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/Mac/Decodable.framework; sourceTree = SOURCE_ROOT; };
 		5494F0941B5C9AFD00101BB0 /* DeliverMetadataEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliverMetadataEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				5494F09B1B5C9AFE00101BB0 /* Assets.xcassets */,
 				5494F09D1B5C9AFE00101BB0 /* Main.storyboard */,
 				5494F0A01B5C9AFE00101BB0 /* Info.plist */,
+				540A601B1B5CE561009FC10E /* InfoPlist.strings */,
 			);
 			path = DeliverMetadataEditor;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5494F09C1B5C9AFE00101BB0 /* Assets.xcassets in Resources */,
+				540A601C1B5CE561009FC10E /* InfoPlist.strings in Resources */,
 				5494F09F1B5C9AFE00101BB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

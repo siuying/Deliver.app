@@ -360,7 +360,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Metadata Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="850" height="760"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -373,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Open View Controller-->
+        <!--Metadata Editor-->
         <scene sceneID="BiB-W5-T2X">
             <objects>
-                <viewController id="t9u-Ye-b28" customClass="OpenViewController" customModule="DeliverMetadataEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Metadata Editor" id="t9u-Ye-b28" customClass="OpenViewController" customModule="DeliverMetadataEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="RM6-RR-efY">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -432,10 +432,10 @@
             </objects>
             <point key="canvasLocation" x="1093" y="242"/>
         </scene>
-        <!--Metadata-->
+        <!--Metadata Editor-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Metadata" id="XfG-lQ-9wD" customClass="EditorViewController" customModule="DeliverMetadataEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Metadata Editor" id="XfG-lQ-9wD" customClass="EditorViewController" customModule="DeliverMetadataEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="850" height="760"/>
                         <autoresizingMask key="autoresizingMask"/>
