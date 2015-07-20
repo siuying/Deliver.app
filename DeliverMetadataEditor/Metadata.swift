@@ -27,9 +27,9 @@ struct MetadataItem {
 }
 
 struct Metadata {
-    var langauges : [Languages:MetadataItem]
+    var langauges : [Language:MetadataItem]
     
-    init(languages theLanguages: [Languages:MetadataItem]) {
+    init(languages theLanguages: [Language:MetadataItem]) {
         self.langauges = theLanguages
     }
 }
@@ -51,10 +51,10 @@ extension MetadataItem : Decodable {
 extension Metadata {
     static func decode(j: AnyObject) throws -> Metadata {
         if let dictionary = j as? NSDictionary {
-            var metadataValues : [Languages:MetadataItem] = [:]
+            var metadataValues : [Language:MetadataItem] = [:]
             for (key , value) in dictionary {
                 if let key = key as? NSString, value = value as? NSDictionary {
-                    if let language = Languages(rawValue: key as String) {
+                    if let language = Language(rawValue: key as String) {
                         let item = try MetadataItem.decode(value)
                         metadataValues[language] = item
                     }
