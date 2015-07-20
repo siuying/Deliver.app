@@ -32,6 +32,7 @@ class MetadataTests: XCTestCase {
                     
                     XCTAssert(metadata.langauges[.enUS]!.title == "EverClip 2 - Clip everything to Evernote", "should have proper title")
                     XCTAssert(metadata.langauges[.jaJP]!.versionWhatsNew == "ウィジェットからワンタップでクリップする機能が追加された！アプリの起動は一切不要！（Evernote に送信するまで）もうアプリの起動にさようなら！", "should have proper description")
+
                     return
                 } catch {
                     XCTFail()

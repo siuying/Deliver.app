@@ -14,6 +14,9 @@
 		5494F09C1B5C9AFE00101BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5494F09B1B5C9AFE00101BB0 /* Assets.xcassets */; };
 		5494F09F1B5C9AFE00101BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5494F09D1B5C9AFE00101BB0 /* Main.storyboard */; };
 		5494F0AA1B5C9AFE00101BB0 /* MetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0A91B5C9AFE00101BB0 /* MetadataTests.swift */; };
+		54B133DD1B5CCADD00E81E8D /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B133DC1B5CCADD00E81E8D /* OpenViewController.swift */; };
+		54B133DF1B5CCC7A00E81E8D /* EditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B133DE1B5CCC7A00E81E8D /* EditorWindowController.swift */; };
+		54E43C451B5CD448002EE729 /* MetadataActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E43C441B5CD448002EE729 /* MetadataActions.swift */; };
 		54FB165D1B5CA72000A729D4 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165C1B5CA72000A729D4 /* Language.swift */; };
 		54FB165F1B5CA8D700A729D4 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165E1B5CA8D700A729D4 /* Metadata.swift */; };
 		54FB16611B5CA9AE00A729D4 /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FB16601B5CA9AE00A729D4 /* metadata.json */; };
@@ -54,6 +57,9 @@
 		5494F0A51B5C9AFE00101BB0 /* DeliverMetadataEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliverMetadataEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5494F0A91B5C9AFE00101BB0 /* MetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataTests.swift; sourceTree = "<group>"; };
 		5494F0AB1B5C9AFE00101BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B133DC1B5CCADD00E81E8D /* OpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
+		54B133DE1B5CCC7A00E81E8D /* EditorWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorWindowController.swift; sourceTree = "<group>"; };
+		54E43C441B5CD448002EE729 /* MetadataActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataActions.swift; sourceTree = "<group>"; };
 		54FB165C1B5CA72000A729D4 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		54FB165E1B5CA8D700A729D4 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		54FB16601B5CA9AE00A729D4 /* metadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = metadata.json; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */,
+				54E43C441B5CD448002EE729 /* MetadataActions.swift */,
+				54B133DE1B5CCC7A00E81E8D /* EditorWindowController.swift */,
+				54B133DC1B5CCADD00E81E8D /* OpenViewController.swift */,
 				5494F0991B5C9AFE00101BB0 /* EditorViewController.swift */,
 				54FB165E1B5CA8D700A729D4 /* Metadata.swift */,
 				54FB165C1B5CA72000A729D4 /* Language.swift */,
@@ -231,7 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B133DD1B5CCADD00E81E8D /* OpenViewController.swift in Sources */,
 				5494F09A1B5C9AFE00101BB0 /* EditorViewController.swift in Sources */,
+				54B133DF1B5CCC7A00E81E8D /* EditorWindowController.swift in Sources */,
+				54E43C451B5CD448002EE729 /* MetadataActions.swift in Sources */,
 				5494F0981B5C9AFD00101BB0 /* AppDelegate.swift in Sources */,
 				54FB165F1B5CA8D700A729D4 /* Metadata.swift in Sources */,
 				54FB165D1B5CA72000A729D4 /* Language.swift in Sources */,
