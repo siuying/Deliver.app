@@ -1,0 +1,3 @@
+framework module Decodable {
+    header "Decodable-Swift.h"
+}
