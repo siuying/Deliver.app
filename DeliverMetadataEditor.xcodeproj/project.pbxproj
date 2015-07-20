@@ -13,6 +13,8 @@
 		5494F09F1B5C9AFE00101BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5494F09D1B5C9AFE00101BB0 /* Main.storyboard */; };
 		5494F0AA1B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */; };
 		54FB165D1B5CA72000A729D4 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165C1B5CA72000A729D4 /* Languages.swift */; };
+		54FB165F1B5CA8D700A729D4 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165E1B5CA8D700A729D4 /* Metadata.swift */; };
+		54FB16611B5CA9AE00A729D4 /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FB16601B5CA9AE00A729D4 /* metadata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverMetadataEditorTests.swift; sourceTree = "<group>"; };
 		5494F0AB1B5C9AFE00101BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FB165C1B5CA72000A729D4 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		54FB165E1B5CA8D700A729D4 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		54FB16601B5CA9AE00A729D4 /* metadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = metadata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */,
 				5494F0991B5C9AFE00101BB0 /* EditorViewController.swift */,
+				54FB165E1B5CA8D700A729D4 /* Metadata.swift */,
 				54FB165C1B5CA72000A729D4 /* Languages.swift */,
 				5494F09B1B5C9AFE00101BB0 /* Assets.xcassets */,
 				5494F09D1B5C9AFE00101BB0 /* Main.storyboard */,
@@ -90,6 +95,7 @@
 		5494F0A81B5C9AFE00101BB0 /* DeliverMetadataEditorTests */ = {
 			isa = PBXGroup;
 			children = (
+				54FB16601B5CA9AE00A729D4 /* metadata.json */,
 				5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */,
 				5494F0AB1B5C9AFE00101BB0 /* Info.plist */,
 			);
@@ -185,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FB16611B5CA9AE00A729D4 /* metadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 			files = (
 				5494F09A1B5C9AFE00101BB0 /* EditorViewController.swift in Sources */,
 				5494F0981B5C9AFD00101BB0 /* AppDelegate.swift in Sources */,
+				54FB165F1B5CA8D700A729D4 /* Metadata.swift in Sources */,
 				54FB165D1B5CA72000A729D4 /* Languages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
