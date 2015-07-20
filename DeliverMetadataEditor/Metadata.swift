@@ -80,8 +80,10 @@ extension Metadata {
     
     func toDictionary() -> NSDictionary {
         var result : [String:AnyObject] = [:]
-        for (language, item) in self.langauges {
-            result[language.rawValue] = item.toDictionary()
+        let languages = self.langauges.keys.array.map({ lang in lang.rawValue }).sort()
+        for language in languages {
+            let item = self.langauges[Language(rawValue: language)!]!
+            result[language] = item.toDictionary()
         }
         return result
     }
