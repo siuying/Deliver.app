@@ -70,16 +70,26 @@ class EditorViewController: NSViewController {
 
     /// Save the form
     @IBAction func saveForm(sender: AnyObject) {
-        if let metadata = self.metadata {
-            do {
-                let data = try NSJSONSerialization.dataWithJSONObject(metadata.toDictionary(), options: NSJSONWritingOptions.PrettyPrinted)
-                try data.writeToURL(self.fileURL!, options: NSDataWritingOptions(rawValue: 0))
-                print("save completed!")
+        do {
+            // update model
+            var selectedItem = self.metadata!.langauges[self.selectedLanguage!]!
+            selectedItem.title = self.titleTextField.stringValue
+            selectedItem.description = self.descriptionTextView.string!
+            selectedItem.versionWhatsNew = self.whatsNewTextView.string!
+            selectedItem.keywords = self.keywordsTextField.stringValue.componentsSeparatedByString(",")
+            selectedItem.softwareURL = self.marketURLTextField.stringValue
+            selectedItem.supportURL = self.supportURLTextField.stringValue
+            selectedItem.privacyURL = self.privacyPolicyURLTextField.stringValue
+            self.metadata!.langauges[self.selectedLanguage!] = selectedItem
 
-            } catch {
-                print("error saving form: \(error)")
+            // save it to disk
+            let data = try NSJSONSerialization.dataWithJSONObject(self.metadata!.toDictionary(), options: NSJSONWritingOptions.PrettyPrinted)
+            try data.writeToURL(self.fileURL!, options: NSDataWritingOptions(rawValue: 0))
+            print("save completed: \(self.fileURL!.absoluteString)")
 
-            }
+        } catch {
+            print("error saving form: \(error)")
+
         }
     }
     
