@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5462102A1B5CAFFF00043718 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546210291B5CAFFF00043718 /* Decodable.framework */; };
+		5462102C1B5CB00700043718 /* Decodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 546210291B5CAFFF00043718 /* Decodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5494F0981B5C9AFD00101BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */; };
 		5494F09A1B5C9AFE00101BB0 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0991B5C9AFE00101BB0 /* EditorViewController.swift */; };
 		5494F09C1B5C9AFE00101BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5494F09B1B5C9AFE00101BB0 /* Assets.xcassets */; };
 		5494F09F1B5C9AFE00101BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5494F09D1B5C9AFE00101BB0 /* Main.storyboard */; };
-		5494F0AA1B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */; };
+		5494F0AA1B5C9AFE00101BB0 /* MetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494F0A91B5C9AFE00101BB0 /* MetadataTests.swift */; };
 		54FB165D1B5CA72000A729D4 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165C1B5CA72000A729D4 /* Languages.swift */; };
 		54FB165F1B5CA8D700A729D4 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB165E1B5CA8D700A729D4 /* Metadata.swift */; };
 		54FB16611B5CA9AE00A729D4 /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 54FB16601B5CA9AE00A729D4 /* metadata.json */; };
@@ -27,7 +29,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		54FB166A1B5CAC8300A729D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5462102C1B5CB00700043718 /* Decodable.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		546210291B5CAFFF00043718 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/Mac/Decodable.framework; sourceTree = SOURCE_ROOT; };
 		5494F0941B5C9AFD00101BB0 /* DeliverMetadataEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliverMetadataEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5494F0971B5C9AFD00101BB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5494F0991B5C9AFE00101BB0 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +52,7 @@
 		5494F09E1B5C9AFE00101BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5494F0A01B5C9AFE00101BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5494F0A51B5C9AFE00101BB0 /* DeliverMetadataEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliverMetadataEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverMetadataEditorTests.swift; sourceTree = "<group>"; };
+		5494F0A91B5C9AFE00101BB0 /* MetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataTests.swift; sourceTree = "<group>"; };
 		5494F0AB1B5C9AFE00101BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FB165C1B5CA72000A729D4 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		54FB165E1B5CA8D700A729D4 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
@@ -47,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5462102A1B5CAFFF00043718 /* Decodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +84,7 @@
 				5494F0961B5C9AFD00101BB0 /* DeliverMetadataEditor */,
 				5494F0A81B5C9AFE00101BB0 /* DeliverMetadataEditorTests */,
 				5494F0951B5C9AFD00101BB0 /* Products */,
+				54FB16621B5CAC4500A729D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +115,19 @@
 			isa = PBXGroup;
 			children = (
 				54FB16601B5CA9AE00A729D4 /* metadata.json */,
-				5494F0A91B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift */,
+				5494F0A91B5C9AFE00101BB0 /* MetadataTests.swift */,
 				5494F0AB1B5C9AFE00101BB0 /* Info.plist */,
 			);
 			path = DeliverMetadataEditorTests;
+			sourceTree = "<group>";
+		};
+		54FB16621B5CAC4500A729D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				546210291B5CAFFF00043718 /* Decodable.framework */,
+			);
+			name = Frameworks;
+			path = DeliverMetadataEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +140,7 @@
 				5494F0901B5C9AFD00101BB0 /* Sources */,
 				5494F0911B5C9AFD00101BB0 /* Frameworks */,
 				5494F0921B5C9AFD00101BB0 /* Resources */,
+				54FB166A1B5CAC8300A729D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5494F0AA1B5C9AFE00101BB0 /* DeliverMetadataEditorTests.swift in Sources */,
+				5494F0AA1B5C9AFE00101BB0 /* MetadataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = DeliverMetadataEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.DeliverMetadataEditor;
@@ -336,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = DeliverMetadataEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.DeliverMetadataEditor;
