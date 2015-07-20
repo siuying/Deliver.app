@@ -205,6 +205,7 @@
 				TargetAttributes = {
 					5494F0931B5C9AFD00101BB0 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 638635GR5X;
 					};
 					5494F0A41B5C9AFE00101BB0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -380,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = DeliverMetadataEditor/Info.plist;
@@ -393,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				INFOPLIST_FILE = DeliverMetadataEditor/Info.plist;
