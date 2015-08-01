@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5494F0931B5C9AFD00101BB0"
-               BuildableName = "DeliverMetadataEditor.app"
-               BlueprintName = "DeliverMetadataEditor"
-               ReferencedContainer = "container:DeliverMetadataEditor.xcodeproj">
+               BuildableName = "Deliver.app"
+               BlueprintName = "Deliver"
+               ReferencedContainer = "container:Deliver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5494F0A41B5C9AFE00101BB0"
-               BuildableName = "DeliverMetadataEditorTests.xctest"
-               BlueprintName = "DeliverMetadataEditorTests"
-               ReferencedContainer = "container:DeliverMetadataEditor.xcodeproj">
+               BuildableName = "Deliver.xctest"
+               BlueprintName = "DeliverTests"
+               ReferencedContainer = "container:Deliver.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5494F0931B5C9AFD00101BB0"
-            BuildableName = "DeliverMetadataEditor.app"
-            BlueprintName = "DeliverMetadataEditor"
-            ReferencedContainer = "container:DeliverMetadataEditor.xcodeproj">
+            BuildableName = "Deliver.app"
+            BlueprintName = "Deliver"
+            ReferencedContainer = "container:Deliver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5494F0931B5C9AFD00101BB0"
-            BuildableName = "DeliverMetadataEditor.app"
-            BlueprintName = "DeliverMetadataEditor"
-            ReferencedContainer = "container:DeliverMetadataEditor.xcodeproj">
+            BuildableName = "Deliver.app"
+            BlueprintName = "Deliver"
+            ReferencedContainer = "container:Deliver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5494F0931B5C9AFD00101BB0"
-            BuildableName = "DeliverMetadataEditor.app"
-            BlueprintName = "DeliverMetadataEditor"
-            ReferencedContainer = "container:DeliverMetadataEditor.xcodeproj">
+            BuildableName = "Deliver.app"
+            BlueprintName = "Deliver"
+            ReferencedContainer = "container:Deliver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
