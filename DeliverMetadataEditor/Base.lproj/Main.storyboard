@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E36b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8152.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8164.2"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -382,7 +382,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="qK1-Uh-iT5">
-                                <rect key="frame" x="108" y="120" width="235" height="60"/>
+                                <rect key="frame" x="107" y="120" width="235" height="60"/>
                                 <beginningViews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiD-sR-r87">
                                         <rect key="frame" x="53" y="0.0" width="129" height="17"/>
@@ -436,8 +436,8 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController title="Metadata Editor" id="XfG-lQ-9wD" customClass="EditorViewController" customModule="DeliverMetadataEditor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="850" height="760"/>
+                    <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="848" height="760"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QK1-8v-fl0" userLabel="Left Stack View">
@@ -497,7 +497,8 @@
                                     </scrollView>
                                 </beginningViews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="6M4-GB-wqb"/>
+                                    <constraint firstAttribute="height" constant="650" id="2rZ-5y-1xn"/>
+                                    <constraint firstAttribute="width" constant="400" id="6M4-GB-wqb"/>
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
@@ -516,7 +517,7 @@
                                 <rect key="frame" x="428" y="59" width="400" height="650"/>
                                 <beginningViews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-SZ-xWl">
-                                        <rect key="frame" x="-2" y="277" width="166" height="17"/>
+                                        <rect key="frame" x="-2" y="276.5" width="166" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="What's new in this version" id="z8O-3t-MuU">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -524,19 +525,19 @@
                                         </textFieldCell>
                                     </textField>
                                     <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUf-Am-tXT">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="269"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="268.5"/>
                                         <clipView key="contentView" ambiguous="YES" id="B0h-1U-w5x">
-                                            <rect key="frame" x="1" y="1" width="383" height="267"/>
+                                            <rect key="frame" x="1" y="1" width="383" height="266.5"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Yha-kL-asn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="267"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="266.5"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <size key="minSize" width="383" height="267"/>
+                                                    <size key="minSize" width="383" height="266.5"/>
                                                     <size key="maxSize" width="473" height="10000000"/>
                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="383" height="267"/>
+                                                    <size key="minSize" width="383" height="266.5"/>
                                                     <size key="maxSize" width="473" height="10000000"/>
                                                 </textView>
                                             </subviews>
@@ -547,7 +548,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="vmE-U8-h7J">
-                                            <rect key="frame" x="384" y="1" width="15" height="267"/>
+                                            <rect key="frame" x="384" y="1" width="15" height="266.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
@@ -621,7 +622,8 @@
                                     </textField>
                                 </endViews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="ZZf-8k-qnr"/>
+                                    <constraint firstAttribute="height" constant="650" id="Vse-co-dZq"/>
+                                    <constraint firstAttribute="width" constant="400" id="ZZf-8k-qnr"/>
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
@@ -658,8 +660,8 @@
                                     <action selector="saveForm:" target="XfG-lQ-9wD" id="2Ah-E8-6oa"/>
                                 </connections>
                             </button>
-                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sai-rh-h3t">
-                                <rect key="frame" x="593" y="716" width="240" height="26"/>
+                            <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sai-rh-h3t">
+                                <rect key="frame" x="591" y="716" width="240" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="fiE-MS-QF8"/>
                                 </constraints>
