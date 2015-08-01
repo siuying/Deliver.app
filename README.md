@@ -2,7 +2,7 @@
 
 An app to upload screenshots and metadata to App Store. A frontend for [deliver](https://github.com/krausefx/deliver). 
 
-![What-Is](Images/screen.jpg?2)
+![What-Is](Images/app_screen.jpg)
 
 ## Why?
 
