@@ -78,7 +78,7 @@ class OpenViewController : NSViewController, NSOpenSavePanelDelegate {
         var isDir : ObjCBool = false
         NSFileManager.defaultManager().fileExistsAtPath(url.path!, isDirectory:&isDir)
         if (isDir) {
-            return false;
+            return true;
         }
 
         // for file, allow only json
